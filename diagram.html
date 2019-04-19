@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>diagram</title>
+  <style>
+    
+    body{
+      background-image:url("https://wallpapercave.com/wp/JzfvVHJ.jpg");
+      background-size:cover;
+      background-repeat:repeat;
+      font-family:sans-serif;
+      text-shadow: 1px 2px 1px white;
+    }
+    
+     #titleok{
+      background-color:rgba(255, 255, 255,0.4);
+      background-size:cover;
+      border-style:solid;
+      border-color:rgb(166, 166, 166);
+    }
+    
+    #titleok h1{
+      text-align: center;
+      text-decoration:underline;
+      background-color:rgba(255, 255, 255,0.5);
+    }
+    
+    #intro{
+      position:absolute;
+      top:100px;
+      background-color:rgba(255, 255, 255,0.4);
+      background-size:cover;
+      border-style:solid;
+      border-color:rgb(166, 166, 166);
+    }
+    
+    #intro p{
+      background-color:rgba(255, 255, 255,0.4);
+      text-align:center;
+    }
+    
+    #intro p span{
+      background-color:rgba(255, 255, 255,0.7);
+    }
+    
+    #INNER{
+      position:absolute;
+      top:200px;
+      background-color:rgba(255, 255, 255,0.4);
+      background-size:cover;
+      border-style:solid;
+      border-color:rgb(166, 166, 166);
+      text-align: center;
+      text-decoration:underline;
+    }
+    
+    #sun{
+      position:absolute;
+      top:280px;
+      text-align:center;
+      background-color:rgba(255, 255, 153,0.4);
+      background-size:cover;
+      border-style:solid;
+      border-color:rgb(230, 230, 0);      
+    }
+    
+    #sun h3{
+      text-decoration:underline;
+      background-color:rgba(255, 255, 153,0.4);
+    }
+    
+    #sun a{
+      color:black;
+    }
+    
+    #mer{
+      position:absolute;
+      top:580px;
+      text-align:center;
+      background-color:rgba(230, 204, 179,0.4);
+      background-size:cover;
+      border-style:solid;
+      border-color:rgb(204, 151, 102);      
+    }
+    
+    #mer h3{
+      text-decoration:underline;
+      background-color:rgba(230, 204, 179,0.4);
+    }
+    
+    #mer a{
+      color:black;
+    }
+    
+    #ve{
+      position:absolute;
+      top:900px;
+      text-align:center;
+      background-color:rgba(255, 179, 128,0.4);
+      background-size:cover;
+      border-style:solid;
+      border-color:rgb(255, 102, 0);      
+    }
+    
+    #ve h3{
+      text-decoration:underline;
+      background-color:rgba(255, 179, 128,0.4);
+    }
+    
+    #ve a{
+      color:black;
+    }
+    
+     #ea{
+      position:absolute;
+      top:1200px;
+      text-align:center;
+      background-color:rgba(179, 217, 255,0.4);
+      background-size:cover;
+      border-style:solid;
+      border-color:rgb(51, 153, 255);      
+    }
+    
+    #ea h3{
+      text-decoration:underline;
+      background-color:rgba(179, 217, 255,0.4);
+    }
+    
+    #ea a{
+      color:black;
+    }
+    
+     #ma{
+      position:absolute;
+      top:1520px;
+      text-align:center;
+      background-color:rgba(255, 153, 153,0.4);
+      background-size:cover;
+      border-style:solid;
+      border-color:red;      
+    }
+    
+    #ma h3{
+      text-decoration:underline;
+      background-color:rgba(255, 153, 153,0.4);
+    }
+    
+    #ma a{
+      color:black;
+    }
+    
+    #belt{
+      position:absolute;
+      top:1820px;
+      text-align:center;
+      background-color:rgba(230, 230, 230,0.4);
+      background-size:cover;
+      border-style:solid;
+      border-color:black;      
+    }
+    
+    #belt h3{
+      text-decoration:underline;
+      background-color:rgba(230, 230, 230,0.4);
+    }
+    
+    #belt a{
+      color:black;
+    }
+    
+    #op{
+      position:absolute;
+      top:2070px;
+      background-color:rgba(255, 255, 255,0.4);
+      background-size:cover;
+      border-style:solid;
+      border-color:rgb(166, 166, 166);
+      text-align: center;
+      text-shadow: 1px 2px 1px white;
+      text-decoration:underline;
+    }
+    
+        #ju{
+      position:absolute;
+      top:2170px;
+      text-align:center;
+      background-color:rgba(222, 192, 160,0.4);
+      background-size:cover;
+      border-style:solid;
+      border-color:rgb(198, 140, 83);      
+    }
+    
+    #ju h3{
+      text-decoration:underline;
+      background-color:rgba(222, 192, 160,0.4);
+    }
+    
+    #ju a{
+      color:black;}
+    
+            #sat{
+      position:absolute;
+      top:2500px;
+      text-align:center;
+      background-color:rgba(255, 236, 179,0.4);
+      background-size:cover;
+      border-style:solid;
+      border-color:rgb(255, 210, 77);      
+    }
+    
+    #sat h3{
+      text-decoration:underline;
+      background-color:rgba(255, 236, 179,0.4);
+    }
+    
+    #sat a{
+      color:black;}
+    
+                #urANUS{
+      position:absolute;
+      top:2800px;
+      text-align:center;
+      background-color:rgba(204, 255, 255,0.4);
+      background-size:cover;
+      border-style:solid;
+      border-color:rgb(0, 204, 204);      
+    }
+    
+    #urANUS h3{
+      text-decoration:underline;
+      background-color:rgba(204, 255, 255,0.4);
+    }
+    
+    #urANUS a{
+      color:black;}
+    
+                    #nep{
+      position:absolute;
+      top:3130px;
+      text-align:center;
+      background-color:rgba(204, 217, 255,0.4);
+      background-size:cover;
+      border-style:solid;
+      border-color:rgb(51, 102, 255);      
+    }
+    
+    #nep h3{
+      text-decoration:underline;
+      background-color:rgba(204, 217, 255,0.4);
+    }
+    
+    #nep a{
+      color:black;}
+    
+    #plu{
+      position:absolute;
+      top:3430px;
+      text-align:center;
+      background-color:rgba(255, 242, 230,0.4);
+      background-size:cover;
+      border-style:solid;
+      border-color:rgb(102, 51, 0)
+;      
+    }
+    
+    #plu h3{
+      text-decoration:underline;
+      background-color:rgba(255, 242, 230,0.4);
+    }
+    
+    #plu a{
+      color:black;}
+    
+    #links{
+      text-align:center;
+      position:relative;
+      top:3630px;
+      background-color:rgba(255, 255, 255,0.4);
+      background-size:cover;
+      border-style:solid;
+      border-color:black;
+    }
+      
+    
+  </style>
+  
+  
+</head>
+<body>
+
+  <div id="titleok">
+    <h1>Pictures of Our 8 Planets + Pluto and Sun</h1>
+  </div>
+  
+  <div id="intro">
+    <p>
+      This page is just a simple way and easy access to gauge at 5 pictures of each of the planets in our solar
+      system + pluto and the sun. A wikipedia page will also be linked at the bottom of each section. 
+      This page will also be acting as a layout diagram showing the inner and outer planets, and the order they fall in! Plus our <strong>MVEMJSUN(P - Optional)</strong>
+      acronym!You may use this page to remember the order of the planets!
+    <br> 
+     <span> Please feel free to email me of any display errors or bugs that may be noticed during your browsing on this page at
+       <strong><u><em>Ethan.Keys@Yahoo.Ca</strong></em></u></span>
+    </p>
+  </div>
+  
+  <h2 id="INNER"> ?Inner Planets? </h2>
+  
+  <div id="sun">
+    <h3> <u>The Sun</u> </h3>
+      <p> Here are 5 pictures of our sun, It is the main thing around every solar system including our own!
+        Although, other solar systems don't have <em>Suns</em>, But rather <em> Stars </em>. The Sun is just
+        a common name we use for the star of our solar system!
+    </p>
+    
+    <img src="https://tse1.mm.bing.net/th?id=OIP.9Y-ijxc2dn_wInC_NDzUMwHaHa&pid=15.1&P=0&w=300&h=300"
+         alt="picture of the sun"
+         width="150"
+         height="150">
+    
+    <img src="http://www.universetoday.com/wp-content/uploads/2008/09/sun_cme.jpg"
+         alt="picture of the sun"
+         width="150"
+         height="150">
+    
+    <img src="http://sunorbit.net/picts/Sun_credit_The_satellite_Solar_and_Heliospheric_observatory_an_international_project_of_ESA_and_NASA_.jpg"
+         alt="picture of the sun"
+         width="150"
+         height="150">
+    
+    <img src="https://opengameart.org/sites/default/files/sun.png"
+         alt="picture of the sun"
+         width="150"
+         height="150">
+    
+    <img src="http://www.natskies.com/wp-content/uploads/2017/01/Transit_of_Venus_in_Front_of_the_Sun.jpg"
+         alt="picture of the sun"
+         width="150"
+         height="150">
+    <br>
+    <a href="https://en.wikipedia.org/wiki/Sun"> Click Here To Read The Sun's Wikipedia! </a>
+    
+  </div>
+  
+  <div id="mer">
+    <h3><u>Mercury </h3></u>
+      <p>
+        Mercury is the first planet in our diagram and in our solar system. It represents the first <strong>(M)</strong>
+        In our diagram. An easy way to remember that Mercury is closest to the Sun is the thought of the word
+        <strong>MOST</strong>. Get it? As in most closest to the sun. Anyways here are 5 pictures followed by the wikipedia
+        Link to follow on Mercury!
+    </p>
+    
+    <img src="https://www.scienceabc.com/wp-content/uploads/2015/07/mercury.jpg"
+         alt="mercury picture"
+         width="150"
+         height="150">
+    
+    <img src="http://4.bp.blogspot.com/-nEHTj8afz3Q/UCWd0FapXxI/AAAAAAAADSY/AKqjHXVHdPM/s1600/mercuryglobe.jpg"
+         alt="mercury picture"
+         width="150"
+         height="150">
+    
+    <img src="https://flowwithjo.files.wordpress.com/2015/02/mercury.jpg"
+         alt="mercury picture"
+         width="150"
+         height="150">
+    
+    <img src="http://kencroswell.com/Mercury.Messenger.jpg"
+         alt="mercury picture"
+         width="150"
+         height="150">
+    
+    <img src="https://austincoppock.com/wp-content/uploads/2015/01/mercury-planet.jpg"
+         alt="mercury picture"
+         width="150"
+         height="150">
+    <br>
+    
+    <a href="https://en.wikipedia.org/wiki/Mercury_(planet)"> Click Here To Read Mercury's Wikipedia </a>
+  </div>
+  
+    <div id="ve">
+    <h3><u>Venus </h3></u>
+      <p>
+        Venus is the second planet from the Sun and represents the <strong>(V)</strong> In our acronym. Here are five picture
+        of the beloved planet which is so boiling hot to live on that we would literally melt! Plus the wikipedia
+        link if you would like more information!
+    </p>
+    
+    <img src="http://lcbr.files.wordpress.com/2012/06/venus-01.jpg"
+         alt="venus picture"
+         width="150"
+         height="150">
+    
+    <img src="http://2.bp.blogspot.com/-1ztcndqBcvY/UaFbP-K2QaI/AAAAAAAAFtA/H3_avarYcJ4/s1600/Post+-+May+2013+(10)+-+3.jpg"
+         alt="venus picture"
+         width="150"
+         height="150">
+    
+    <img src="http://www.cool2bkids.com/wp-content/uploads/2014/07/Venus-Photo.jpg"
+         alt="venus picture"
+         width="150"
+         height="150">
+    
+    <img src="https://tse4.mm.bing.net/th?id=OIP.oJgPEqXEys3eQCFFG5LrwAHaEc&pid=15.1&P=0&w=285&h=172"
+         alt="venus picture"
+         width="150"
+         height="150">
+    
+    <img src="https://tse3.mm.bing.net/th?id=OIP.F77N9r_ueqz3CghR-puGBgHaE4&pid=15.1&P=0&w=252&h=167"
+         alt="venus picture"
+         width="150"
+         height="150">
+    <br>
+    <a href="https://en.wikipedia.org/wiki/Venus"> Click Here To Read Venus' Wikipedia </a>
+  </div>
+  
+  
+    <div id="ea">
+    <h3><u>Earth </h3></u>
+      <p>
+        Earth is the third planet from the Sun and represents the <strong>(E)</STRONG> in our acronym! You 
+        probably think you know this planet very well since we live on it, but you may know the surface perfectly
+        but you you know what it looks like from outer space? Bet not! Here are 5 pictures + the wikipedia!
+    </p>
+    
+    <img src="http://2.bp.blogspot.com/_xjcwwA-nj8k/S9D9ixh0QqI/AAAAAAAAANw/Or6ldDwxI0k/s1600/earth.jpg"
+         alt="earth picture"
+         width="150"
+         height="150">
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Earth_Eastern_Hemisphere.jpg/1024px-Earth_Eastern_Hemisphere.jpg"
+         alt="earth picture"
+         width="150"
+         height="150">
+    
+    <img src="http://3.bp.blogspot.com/-qsVRnI0EEO0/UYIhBHvCR-I/AAAAAAAAFz0/KsmiDRU-O4I/s1600/Planet+Earth+(43).jpg"
+         alt="earth picture"
+         width="150"
+         height="150">
+    
+    <img src="http://www.howdoeslooklike.com/wp-content/uploads/2013/03/This-picture-is-showing-how-earth-look-like-5.jpg"
+         alt="earth picture"
+         width="150"
+         height="150">
+    
+    <img src="https://tse1.mm.bing.net/th?id=OIP.u821Zstcfa5l89X3GB8wKQHaEK&pid=15.1&P=0&w=345&h=195"
+         alt="earth picture"
+         width="150"
+         height="150">
+      <br>
+    
+    <a href="https://en.wikipedia.org/wiki/Earth"> Click Here To Read Earth's Wikipedia </a>
+  </div>
+  
+    <div id="ma">
+    <h3><u>Mars </h3></u>
+      <p>
+        Mars is the fourth planet from the Sun and is represented by the second <strong>(M)</STRONG> in our
+        acronym! It is a potential planet for life to prosper if we ever decided to change the landform to
+        our needs and liking to make it suitable for human life. Fun Fact: They think it has liquid water! Here
+        are the 5 pictures and the Wikipedia!
+    </p>
+    
+    <img src="https://tse4.mm.bing.net/th?id=OIP.zw8rFxkrVfUs2ZcqJySatwHaHa&pid=15.1&P=0&w=300&h=300"
+         alt="mars picture"
+         width="150"
+         height="150">
+    
+    <img src="http://www.fvalk.com/images/Space/Mars/D.JPG"
+         alt="mars picture"
+         width="150"
+         height="150">
+    
+    <img src="http://www.digitaljournal.com/img/5/0/8/3/9/3/i/5/8/4/o/Mars-Schiaparelli.jpg"
+         alt="mars picture"
+         width="150"
+         height="150">
+    
+    <img src="http://upload.wikimedia.org/wikipedia/commons/0/09/Celestia_mars.jpg"
+         alt="mars picture"
+         width="150"
+         height="150">
+    
+    <img src="http://www.buzzle.com/images/astronomy/mars/mars-atmosphere.jpg"
+         alt="mars picture"
+         width="150"
+         height="150">
+      <br>
+    
+    <a href="https://en.wikipedia.org/wiki/Mars"> Click Here To Read Mars' Wikipedia </a>
+  </div>
+  
+  <!--Astrobelt and Outerplanets!-->
+  
+  <div id="belt">
+    <h3> Asteroid Belt </h3>
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/InnerSolarSystem-en.png/300px-InnerSolarSystem-en.png"
+         alt="asteroid belt"
+         width="150"
+         height="150">
+    
+    <img src="https://tse2.mm.bing.net/th?id=OIP.mmMFjJv5FA83kUz02erOpQHaEK&pid=15.1&P=0&w=297&h=168"
+         alt="asteroid belt"
+         width="150"
+         height="150">
+    
+    <img src="https://tse4.mm.bing.net/th?id=OIP.d_Qgw0rQ8flE-YL2R91mpQHaD4&pid=15.1&P=0&w=310&h=163"
+         alt="asteroid belt"
+         width="150"
+         height="150">
+    
+    <br>
+    
+    <a href="https://en.wikipedia.org/wiki/Asteroid_belt"> Click Here To Read About The Asteroid Belt </a>
+       
+       </div>
+    
+  <h2 id="op">? Outter Planets ?</h2>
+  
+  <div id="ju">
+    <u><h3> Jupiter </h3></u>
+    
+    <p>
+      Jupiter is the first <strong>GAS GIANT</STRONG> in this diagram and is the first outer planet (described by seperation
+      from the asteroid belt!) It Represents the (J)in our acronym! Some say it is a failed star, and it is one of the <strong>BIGGEST</strong> planets in our
+      solar system! Here are 5 pictures and the Wikipedia link!
+    </p>
+    
+    <img src="http://upload.wikimedia.org/wikipedia/commons/1/1a/Jupiter_on_2010-06-07_(captured_by_the_Hubble_Space_Telescope).jpg"
+         alt="jupiter pic"
+         height="150"
+         width="150">
+    
+        <img src="http://www.esa.int/var/esa/storage/images/esa_multimedia/images/2017/04/jupiter_on_25_february_2017/16884626-1-eng-GB/Jupiter_on_25_February_2017.jpg"
+         alt="jupiter pic"
+         height="150"
+         width="150">
+    
+        <img src="http://www.8planets.co.uk/wp-content/themes/8planets/images/jupiter_lg.jpg"
+         alt="jupiter pic"
+         height="150"
+         width="150">
+    
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Jupiter%27s_swirling_colourful_clouds.jpg/1200px-Jupiter%27s_swirling_colourful_clouds.jpg"
+         alt="jupiter pic"
+         height="150"
+         width="150">
+    
+        <img src="https://tse4.mm.bing.net/th?id=OIP.CA4SNS1WZZaNq1g0LHGnVgHaFr&pid=15.1&P=0&w=232&h=179"
+         alt="jupiter pic"
+         height="150"
+         width="150">
+    <br>
+         
+         <a href="https://en.wikipedia.org/wiki/Jupiter"> Click Here To Read Jupiter's Wikipedia </a>
+  </div>
+  
+  <div id="sat">
+    <u><h3> Saturn </h3></u>
+    
+    <p>
+      Saturn is probably the planet you know most due to its <strong>huge</strong> ring that surrounds it. It's beautiful isn't it?
+      It Represents the (S) in our acronym. Here are 5 pictures followed by the wikipedia link!
+    </p>
+    
+    <img src="http://2.bp.blogspot.com/_Lu0JxT9wu9Y/TJK74B7140I/AAAAAAAABZo/odaY2u5JdLE/s1600/saturn_001.jpg"
+         alt="saturn pic"
+         height="150"
+         width="150">
+    
+        <img src="https://tse3.mm.bing.net/th?id=OIP.ldA5cZnHg3HUF-cGHbgP9wHaFL&pid=15.1&P=0&w=269&h=189"
+         alt="saturn pic"
+         height="150"
+         width="150">
+    
+        <img src="https://img-new.cgtrader.com/items/23539/saturn_3d_model_blend_f8d70fad-fe78-4fea-9082-c6d6f60b9771.jpg"
+         alt="saturn pic"
+         height="150"
+         width="150">
+    
+        <img src="http://en.es-static.us/upl/2011/04/saturn_voyager_2.jpg"
+         alt="saturn pic"
+         height="150"
+         width="150">
+    
+        <img src="http://www.cool2bkids.com/wp-content/uploads/2014/05/Saturn-Pictures.png"
+         alt="saturn pic"
+         height="150"
+         width="150">
+    <br>
+         
+         <a href="https://en.wikipedia.org/wiki/Saturn"> Click Here To Read Saturn's Wikipedia </a>
+  </div>
+  
+  <div id="urANUS">
+    <u><h3> Uranus </h3></u>
+    
+    <p>
+      This planet is Uranus, not your butthole, we don't make jokes like that here on our site <strong>(Please Dont Check the CODE!)</strong>
+      It represents the (U) in our acronym and is the third outer planet. Make sure to check out on your own time the time NASA
+      probed straight into Uranus! Here are the pictures and wikipedia!
+    </p>
+    
+    <img src="https://tse4.mm.bing.net/th?id=OIP.qgqYdg6cZzehUarRNreyagHaHV&pid=15.1&P=0&w=165&h=164"
+         alt="uranus pic"
+         height="150"
+         width="150">
+    
+        <img src="http://i1.ytimg.com/vi/tkSiHuXTMok/maxresdefault.jpg"
+         alt="uranus pic"
+         height="150"
+         width="150">
+    
+        <img src="https://solarstory.net/img/articles/big/planet-uranus-by-voyager-2-in-1986.jpg"
+         alt="uranus pic"
+         height="150"
+         width="150">
+    
+        <img src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/M1IgxJt/animation-of-uranus-planet_emnpto0sx__F0000.png"
+         alt="uranus pic"
+         height="150"
+         width="150">
+    
+        <img src="http://planetfacts.org/wp-content/uploads/2010/05/Uranus-from-Voyager-2-800.jpg"
+         alt="uranus pic"
+         height="150"
+         width="150">
+    <br>
+         
+         <a href="https://en.wikipedia.org/wiki/Uranus"> Click Here To Read Uranus' Wikipedia </a>
+  </div>
+  
+  <div id="nep">
+    <u><h3> Neptune </h3></u>
+    
+    <p>
+      Neptune is personally the planet I know least about, Probably you too. It's so far out compared to the others that
+      they barely have time for it! Plus it's not all that interesting, it is just another blue gas giant like Uranus.
+      This planet represents the (N) in our acronym. HERE ARE YO PICS and wiki!
+    </p>
+    
+    <img src="https://lovecraftianscience.files.wordpress.com/2014/07/neptune_full.jpg"
+         alt="neptune pic"
+         height="150"
+         width="150">
+    
+        <img src="http://astronautadventures.files.wordpress.com/2011/04/neptune1.jpg"
+         alt="neptune pic"
+         height="150"
+         width="150">
+    
+        <img src="https://nationalpostcom.files.wordpress.com/2017/08/neptune-cropped.jpg"
+         alt="neptune pic"
+         height="150"
+         width="150">
+    
+        <img src="http://www.universetoday.com/wp-content/uploads/2009/09/Neptune.jpg"
+         alt="neptune pic"
+         height="150"
+         width="150">
+    
+        <img src="http://2.bp.blogspot.com/_ERc3KMn-NYw/S7hBSr-FdDI/AAAAAAAAACE/ShFXZKsayX4/s1600/neptune-planets-wallpapers.jpg"
+         alt="neptune pic"
+         height="150"
+         width="150">
+    <br>
+         
+         <a href="https://en.wikipedia.org/wiki/Neptune"> Click Here To Read Neptune's Wikipedia </a>
+  </div>
+  
+  <div id="plu">
+    <u><h3> Pluto </h3></u>
+    
+    <p>
+      Pluto's lame, its not considered a planet which is why we have optional next to the (P) in the acronym. Its very small
+      and so far away that its super cold! Please don't make it feel bad by calling it a dwarf planet. Here are the pictures.
+    </p>
+    
+    <img src="http://moviewriternyu.files.wordpress.com/2014/01/pluto.jpg"
+         alt="pluto pic"
+         height="150"
+         width="150">
+    
+        <img src="http://cdn.sci-news.com/images/enlarge2/image_3274_1e-Pluto.jpg"
+         alt="pluto pic"
+         height="150"
+         width="150">
+    
+        <img src="http://media.boingboing.net/wp-content/uploads/2015/07/nh-pluto-in-false-color.jpg"
+         alt="pluto pic"
+         height="150"
+         width="150">
+    
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Pluto_in_True_Color_-_High-Res.jpg/1200px-Pluto_in_True_Color_-_High-Res.jpg"
+         alt="pluto pic"
+         height="150"
+         width="150">
+    
+        <img src="https://farm6.staticflickr.com/5673/21335944185_7d0bbf5a9e_o.png"
+         alt="pluto pic"
+         height="150"
+         width="150">
+    <br>
+         
+         <a href="https://en.wikipedia.org/wiki/Pluto"> Click Here To Read Pluto's Wikipedia </a>
+  </div>
+  
+    <div id="links">
+  <a href="index.html"> Main Page </a>
+    <a href="galaxies.html"> |Galaxies| </a>
+  </div>
+    
+</body>
+</html>
